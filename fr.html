@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Awesome Практика</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        
+        section {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        h2 {
+            color: #3498db;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        
+        .example {
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        
+        .code {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            margin-top: 10px;
+        }
+        
+        .icon-row {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+         .fa-telegram { color: #0088CC; }
+
+         .btn-with-icon, .link-with-icon, .list-item {
+    padding: 10px 20px;
+    margin: 10px;
+    display: inline-block;
+}
+
+/* Иконка для кнопки */
+.btn-with-icon::before {
+    content: "\f019";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-right: 8px;
+}
+
+/* Иконка для ссылки */
+.link-with-icon::after {
+    content: "\f35d";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-left: 8px;
+}
+
+/* Иконка для элемента списка */
+.list-item::before {
+    content: "\f0e0";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-right: 8px;
+}
+    </style>
+</head>
+<body>
+    <h1>🖌 Практическое задание: Font Awesome</h1>
+    
+   <section id="block1">
+    <h2>1. Типы иконок</h2>
+    <p>Font Awesome предлагает несколько стилей иконок:</p>
+    
+    <div class="example">
+        <div class="icon-row">
+            <div>
+                <i class="fas fa-home"></i>
+                <p>Solid-иконка</p>
+            </div>
+            <div>
+                <i class="far fa-home"></i>
+                <p>Regular (far) , не смог найти рабочюю</p>
+            </div>
+            <div>
+               <i class="fab fa-telegram"></i>
+                <p>Brands (fab)</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="block1">
+    <h2>2.Размеры иконок</h2>
+    <div class="example">
+        <div class="icon-row">
+            <div>
+                <i class="fas fa-camera fa-lg"></i>
+                <p>fa-lg</p>
+            </div>
+            <div>
+                <i class="fas fa-camera fa-2x"></i>
+                <p>fa-2x</p>
+            </div>
+            <div>
+               <i class="fas fa-camera fa-3x"></i>
+                <p>fa-3x</p>
+            </div>
+             <div>
+               <i class="fas fa-camera fa-4x"></i>
+                <p>fa-4x</p>
+            </div>
+             <div>
+               <i class="fas fa-camera fa-5x"></i>
+                <p>fa-5x</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <section id="block1">
+    <h2> 3. Список задач с кастомными маркерами.</h2>
+    <div class="example">
+        <ul class="fa-ul">
+            <li>
+                <span class="fa-li">
+                    <i class="fas fa-check-square"></i>
+                </span>
+                Сделать домашнее задание по математике
+            </li>
+            <li>
+                <span class="fa-li">
+                    <i class="fas fa-exclamation-circle"></i>
+                </span>
+                Подготовить презентацию к завтрашнему совещанию
+            </li>
+            <li>
+                <span class="fa-li">
+                    <i class="fas fa-clock"></i>
+                </span>
+                Записаться на прием к врачу
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section id="block1">
+    <h2>4.Анимированные иконки</h2>
+    <div class="example">
+        <div class="icon-row">
+            <div>
+                <i class="fas fa-cog fa-spin fa-3x"></i>
+                 <p>fa-spin плавное вращение</p>
+            </div>
+            <div>
+                <i class="fas fa-spinner fa-pulse fa-3x"></i>
+                <p> fa-pulse прерывистое вращение</p>
+            </div>
+            <div>
+                <i class="fas fa-bell fa-shake fa-3x"></i>                              
+                <p> fa-shake создает эффект тряски</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="block1">
+    <h2>5. Трансформации иконок</h2>
+    <div class="example">
+            <div>
+                <div>
+                    <i class="fas fa-arrow-right fa-rotate-90 fa-3x"></i>
+                </div>
+                <p>Поворот 90°</p>
+                <code>fa-rotate-90</code>
+            </div>
+                <div>
+                    <i class="fas fa-arrow-right fa-rotate-180 fa-3x"></i>
+                </div>
+                <p>Поворот 180°</p>
+                <code>fa-rotate-180</code>
+            </div>
+            
+            <div>
+                <div>
+                    <i class="fas fa-arrow-right fa-rotate-270 fa-3x"></i>
+                </div>
+                <p>Поворот 270°</p>
+            </div> 
+            <div>
+                <div>
+                    <i class="fas fa-arrow-right fa-flip-horizontal fa-3x"></i>
+                </div>
+                <p>Отражение по горизонтали</p>
+                <code>fa-flip-horizontal</code>
+            </div>
+            
+            <div>
+                <div>
+                    <i class="fas fa-arrow-right fa-flip-vertical fa-3x"></i>
+                </div>
+                <p>Отражение по вертикали</p>
+                <code>fa-flip-vertical</code>
+            </div>
+            <div>
+                <div>
+                    <i class="fas fa-arrow-right fa-flip-horizontal fa-rotate-90 fa-3x"></i>
+                </div>
+            </div>
+    </div>
+</section>
+
+<section id="block6">
+    <h2>6. Комбинированные иконки</h2>
+    <p>Создание составных иконок с использованием стекирования:</p>
+    
+    <div class="example">
+        <div class="icon-row">
+            <div>
+                <span class="fa-stack fa-2x">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-flag fa-stack-1x fa-inverse"></i>
+                </span>
+                <p> круг + флаг<br>
+                </p>
+            </div>
+            
+            
+            <div>
+                <i class="fas fa-camera fa-border fa-2x"></i>
+                <p>камера в рамке<br>
+                </p>
+            </div>
+            
+            <div>
+                <span class="fa-stack fa-2x">
+                    <i class="fas fa-square fa-stack-2x"></i>
+                    <i class="fas fa-heart fa-stack-1x fa-inverse"></i>
+                </span>
+                <p> квадрат + сердце<br>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="block1">
+    <h2>7. Иконки через CSS псевдоэлементы</h2>
+    <div class="example"> 
+        <div>
+            <button class="btn-with-icon">Скачать файл</button>
+            <p><strong>для кнопки:</strong><br>
+            <code>
+    .btn-with-icon::before {
+    content: "\f019"; 
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+            </code></p>
+        </div>
+
+        <div>
+            <p class="link-with-icon">Перейти на сайт</p>
+            <p><strong>для ссылки:</strong><br>
+            <code>
+.link-with-icon::after {
+    content: "\f35d"; /* Unicode для иконки external-link */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+            </code></p>
+        </div>
+        <div>
+            <div class="list-item">Новое сообщение</div>
+            <p><strong> для элемента:</strong><br>
+            <code>
+.list-item::before {
+    content: "\f0e0"; /* Unicode для иконки envelope */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+            </code></p>
+        </div>
+    </div>
+</section>
+    
+</body>
+</html>
